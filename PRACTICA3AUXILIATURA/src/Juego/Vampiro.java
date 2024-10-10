@@ -1,6 +1,8 @@
 package Juego;
 
 class Vampiro extends Enemigo {
+    private static final int VIDA_ROBADA = 5;
+
     public Vampiro() {
         super("Vampiro", 50, 10);
     }
@@ -8,6 +10,7 @@ class Vampiro extends Enemigo {
     @Override
     public int atacar() {
         int daño = super.atacar();
-        return daño; // Puede implementar robar vida aquí si se desea
+        this.recibirDaño(-VIDA_ROBADA);
+        return daño;
     }
 }

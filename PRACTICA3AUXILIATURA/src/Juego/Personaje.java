@@ -38,7 +38,7 @@ public class Personaje {
         inventario.mostrarItems();
     }
 
-    // Cambiado a public
+
     public int getPuntosDeVida() {
         return puntosDeVida;
     }

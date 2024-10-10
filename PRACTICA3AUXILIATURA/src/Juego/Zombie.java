@@ -8,7 +8,7 @@ class Zombie extends Enemigo {
     @Override
     public int atacar() {
         int daño = super.atacar();
-        recibirDaño(-5); // Regenerar 5 puntos de vida
+        recibirDaño(-5); 
         return daño;
     }
 }
